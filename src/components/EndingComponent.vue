@@ -6,6 +6,7 @@
     <img class="grid-item" src="../assets/mjh01.jpg">
     <img class="grid-item" src="../assets/mjh05.jpg">
     <img class="grid-item" src="../assets/mjh03.jpg">
+    <img class="grid-item" src="../assets/mjh07.jpg">
 </template>
 
 <script>
