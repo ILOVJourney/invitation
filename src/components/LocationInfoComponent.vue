@@ -1,7 +1,7 @@
 <template>
   <img class="location-img" src="../assets/location.png">
   <h4>오시는 길</h4>
-  <img class="map-img" src="../assets/map.png">
+  <img class="map-img" src="../assets/map.png" @click="openPopup">
   <div class="left-side">
     <div class="ma-t-5">
       📢 주소:&nbsp; 수원시 덕영대로 1555번길 20, 2층
@@ -13,14 +13,39 @@
       🚌 대중교통:&nbsp; 망포역 하차 후, 8번 출구 직진
     </div>
   </div>
+  <MapModal :show-modal="showModal" @close="closePopup"/>
   <BottomLine />
 </template>
 
 <script>
 import BottomLine from './BottomLine.vue';
+import MapModal from '../modal/MapModal.vue'
 export default {
+  data() {
+    return {
+      showModal: false,
+    };
+  },
   components:{
     BottomLine,
+    MapModal,
+  },
+  methods: {
+    openPopup() {
+      this.showModal = true;
+    },
+    closePopup(){
+      this.showModal = false;
+    }
+  },
+  watch:{
+    showModal(newValue) {
+      if (newValue) {
+        document.body.style.overflow = 'hidden'; // 모달 열림
+      } else {
+        document.body.style.overflow = ''; // 모달 닫힘
+      }
+    },
   }
 }
 </script>
