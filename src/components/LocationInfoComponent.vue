@@ -4,13 +4,13 @@
   <img class="map-img" src="../assets/map.png" @click="openPopup">
   <div class="left-side">
     <div class="ma-t-5">
-      📢 주소:&nbsp; 수원시 덕영대로 1555번길 20, 2층
+      📢 주소:&nbsp; 경기 수원시 영통구 영통로214번길 31 2층
     </div>
     <div class="ma-t-5">
-      🚗 차량:&nbsp; 수원시 덕영대로 1555번길 20, B2층
+      🚗 차량:&nbsp; 벽적골롯데캐슬9단지아파트 주차장
     </div>
     <div class="ma-t-5">
-      🚌 대중교통:&nbsp; 망포역 하차 후, 8번 출구 직진
+      🚌 대중교통:&nbsp; 망포역 하차 후, 8번 출구
     </div>
   </div>
   <MapModal :show-modal="showModal" @close="closePopup"/>
@@ -66,7 +66,7 @@ h4{
     height: auto; 
 }
 .ma-t-5{
-    margin-left: 12%;
+    margin-left: 10%;
     margin-top: 5%;
 }
 .left-side{
