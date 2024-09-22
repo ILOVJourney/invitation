@@ -1,6 +1,9 @@
 <template>
     <img src="../assets/lovelove.png">
     <h4>"두 가족의 따뜻한<br>첫 만남에 초대합니다."</h4>
+    <div class="date">
+        <text class="font-date">2024년 10월 19일 (토) 오후 6시</text>
+    </div>
     <div class="font-small">
             더위를 이겨내고,<br>
             따스함과 시원함이 공존하는 9월,<br>
@@ -37,9 +40,18 @@ h4{
     margin: 0;
     line-height: 30px;
 }
+.date{
+    margin-top: 12%;
+}
+.font-date {
+  background-color: #fff2cc; /* 형광펜 색상 (노란색) */
+  padding: 8px; /* 텍스트와 배경 사이 여백 */
+  font-size: 15px;
+  border-radius: 4px; /* 모서리 둥글게 */
+}
 .font-small{
     font-size: 15px;
-    margin-top: 18%;
+    margin-top: 13%;
     line-height: 26px;
 }
 img {
