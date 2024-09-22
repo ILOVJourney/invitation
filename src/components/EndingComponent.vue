@@ -7,6 +7,8 @@
     <img class="grid-item" src="../assets/mjh05.jpg">
     <img class="grid-item" src="../assets/mjh03.jpg">
     <img class="grid-item" src="../assets/mjh07.jpg">
+    <img class="grid-item" src="../assets/mjh08.jpg">
+    <img class="grid-item" src="../assets/mjh09.jpg">
 </template>
 
 <script>
