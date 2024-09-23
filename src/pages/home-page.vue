@@ -44,6 +44,7 @@ export default {
 body {
     background-image: url("../assets/background.png");
     background-size: contain;
+    background-repeat: no-repeat;
     /* font-family: 'Noto Sans KR'; */
     font-family: 'SCoreDream';
     text-align: center;  
@@ -56,5 +57,12 @@ body {
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;
+}
+@media (min-width: 768px) {
+    html, body {
+  width: 375px; /* 모바일 화면 너비로 고정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  height: 100%;
+}
 }
 </style>

@@ -15,7 +15,6 @@ export default {
   },
   methods:{
     clickHandler(){
-      console.log("TEST")
       this.isIntroView = false
     },
   },
